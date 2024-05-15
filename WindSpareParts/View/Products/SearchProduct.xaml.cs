@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using WindSpareParts.Model;
+using WindSpareParts.View;
 
 namespace WindSpareParts
 {
@@ -60,6 +61,11 @@ namespace WindSpareParts
         private void Searchbox_KeyDown(object sender, KeyEventArgs e)
         {
             CreateProduct.IsEnabled = true;
+        }
+
+        private void BackToMain_Click(object sender, RoutedEventArgs e)
+        {
+            Get.BackToMain(this);
         }
     }
 

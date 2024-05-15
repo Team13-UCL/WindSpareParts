@@ -41,5 +41,15 @@
                    Foreground="#6AB93A"
                    FontFamily="Times New Roman"
                    Margin="0,56,0,0" />
+
+        <Button Content="Fjern produkter"
+                Margin="606,416,534,215"
+                BorderThickness="0"
+                Background="LightBlue"
+                BorderBrush="Transparent"
+                RenderTransformOrigin="0.5,0.67"
+                Click="BackToMain_Click"
+                Width="160"
+                Height="70" />
     </Grid>
 </Window>

@@ -23,5 +23,10 @@ namespace WindSpareParts.View.Products
         {
             InitializeComponent();
         }
+
+        private void BackToMain_Click(object sender, RoutedEventArgs e)
+        {
+            Get.BackToMain(this);
+        }
     }
 }
