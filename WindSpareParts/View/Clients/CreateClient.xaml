@@ -10,7 +10,7 @@
         Width="1300"
         WindowStartupLocation="CenterScreen"
         Background="Transparent">
-    <Grid>
+    <Grid Margin="0,0,10,11">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"
                               MinWidth="1300" />
@@ -43,7 +43,7 @@
                    Margin="333,56,0,0" />
 
         <Button Content="Tilbage til hoved menu"
-                Margin="1098,81,42,550"
+                Margin="719,563,421,68"
                 BorderThickness="0"
                 Background="LightBlue"
                 BorderBrush="Transparent"
@@ -51,6 +51,87 @@
                 Click="BackToMain_Click"
                 Width="160"
                 Height="70" />
+        <Button Content="Opret kunde"
+                Margin="414,563,726,68"
+                BorderThickness="0"
+                Background="#71D984"
+                BorderBrush="Transparent"
+                RenderTransformOrigin="0.5,0.67"
+                Click="OpretKunde_Click"
+                Width="160"
+                Height="70" />
+
+        <Grid Grid.Column="2">
+            <TextBox Text="{Binding SelectedPerson.FirstName}"
+                     Height="20"
+                     VerticalAlignment="Top"
+                     Margin="170,62,171,0" />
+            <TextBox Text="{Binding SelectedPerson.LastName}"
+                     Height="20"
+                     Margin="170,109,171,0"
+                     VerticalAlignment="Top" />
+            <TextBox Text="{Binding SelectedPerson.Age}"
+                     Height="20"
+                     Margin="170,158,171,0"
+                     VerticalAlignment="Top" />
+            <TextBox Text="{Binding SelectedPerson.Phone}"
+                     Height="20"
+                     Margin="170,204,171,0"
+                     VerticalAlignment="Top" />
+            <Label Content="FirstName:"
+                   HorizontalAlignment="Left"
+                   Margin="67,59,0,0"
+                   VerticalAlignment="Top" />
+            <Label Content="LastName:"
+                   HorizontalAlignment="Left"
+                   Margin="67,103,0,0"
+                   VerticalAlignment="Top"
+                   Width="66" />
+            <Label Content="Age:"
+                   HorizontalAlignment="Left"
+                   Margin="67,152,0,0"
+                   VerticalAlignment="Top" />
+            <Label Content="Phone:"
+                   HorizontalAlignment="Left"
+                   Margin="67,204,0,0"
+                   VerticalAlignment="Top" />
+        </Grid>
+        <Grid Margin="414,246,421,184"
+              Background="LightBlue">
+            <TextBox Text="{Binding SelectedPerson.FirstName}"
+                     Height="20"
+                     VerticalAlignment="Top"
+                     Margin="170,62,171,0" />
+            <TextBox Text="{Binding SelectedPerson.LastName}"
+                     Height="20"
+                     Margin="170,109,171,0"
+                     VerticalAlignment="Top" />
+            <TextBox Text="{Binding SelectedPerson.Age}"
+                     Height="20"
+                     Margin="170,158,171,0"
+                     VerticalAlignment="Top" />
+            <TextBox Text="{Binding SelectedPerson.Phone}"
+                     Height="20"
+                     Margin="170,204,171,0"
+                     VerticalAlignment="Top" />
+            <Label Content="Virksomheds navn:"
+                   HorizontalAlignment="Left"
+                   Margin="35,59,0,0"
+                   VerticalAlignment="Top" />
+            <Label Content="Kontakt person:"
+                   HorizontalAlignment="Left"
+                   Margin="35,106,0,0"
+                   VerticalAlignment="Top"
+                   Width="96" />
+            <Label Content="Produkt efterspørgsel:"
+                   HorizontalAlignment="Left"
+                   Margin="26,155,0,0"
+                   VerticalAlignment="Top" />
+            <Label Content="Telefon Nummer:"
+                   HorizontalAlignment="Left"
+                   Margin="39,201,0,0"
+                   VerticalAlignment="Top" />
+        </Grid>
 
     </Grid>
 </Window>

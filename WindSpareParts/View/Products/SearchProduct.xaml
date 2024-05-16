@@ -43,31 +43,29 @@
                    Margin="0,40,0,0" />
         <Button x:Name="search"
                 Content="Søg"
-                Margin="642,540,642,48"
+                Margin="542,548,742,40"
                 Click="search_Click"
                 Background="LightBlue" />
         <Button x:Name="CreateProduct"
                 Content="Opret produkt&#xD;&#xA;Kun et af gangen"
-                Margin="936,540,348,48"
+                Margin="788,548,496,40"
                 Click="CreateProduct_Click"
                 Background="LightBlue"
                 Foreground="Black"
                 IsEnabled="False" />
         <Button x:Name="Clear"
                 Content="Clear"
-                Margin="348,540,936,48"
+                Margin="290,548,994,40"
                 Click="Clear_Click"
                 Background="LightBlue" />
 
         <Button Content="Tilbage til hoved menu"
-                Margin="1156,537,84,55"
+                Margin="1036,548,240,36"
                 BorderThickness="0"
                 Background="LightBlue"
                 BorderBrush="Transparent"
-                RenderTransformOrigin="0.5,0.67"
-                Click="BackToMain_Click"
-                Width="160"
-                Height="70" />
+                RenderTransformOrigin="-0.919,1.091"
+                Click="BackToMain_Click" />
 
     </Grid>
 </Window>

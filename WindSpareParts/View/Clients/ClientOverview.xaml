@@ -23,6 +23,7 @@
             <RowDefinition Height="0*" />
         </Grid.RowDefinitions>
 
+
         <Border Background="#282D33"
                 BorderBrush="#3A4149"
                 BorderThickness="6"
@@ -40,9 +41,33 @@
                    Foreground="#6AB93A"
                    FontFamily="Times New Roman"
                    Margin="333,56,0,0" />
-
+        <TextBlock x:Name="Kunder"
+                   HorizontalAlignment="Left"
+                   TextWrapping="Wrap"
+                   Text="Kunder"
+                   VerticalAlignment="Top"
+                   Width="196"
+                   Height="63"
+                   Background="#282D33"
+                   FontSize="60"
+                   Foreground="#6AB93A"
+                   FontFamily="Times New Roman"
+                   Margin="83,167,0,0" />
+        <ListBox ItemsSource="{Binding PersonsVM}"
+                 SelectedItem="{Binding SelectedPerson}"
+                 Background="#8899AD"
+                 Grid.Row="0"
+                 Margin="38,241,976,74">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding FullName}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
         <Button Content="Tilbage til hoved menu"
-                Margin="1108,81,32,550"
+                Margin="570,592,570,39"
                 BorderThickness="0"
                 Background="LightBlue"
                 BorderBrush="Transparent"
