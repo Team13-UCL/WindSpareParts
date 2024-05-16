@@ -59,7 +59,7 @@
                 Click="Clear_Click"
                 Background="LightBlue" />
 
-        <Button Content="Fjern produkter"
+        <Button Content="Tilbage til hoved menu"
                 Margin="1156,537,84,55"
                 BorderThickness="0"
                 Background="LightBlue"

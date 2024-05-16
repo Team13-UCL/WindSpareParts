@@ -44,7 +44,7 @@
                    FontFamily="Times New Roman"
                    Margin="333,56,0,0" />
 
-        <Button Content="Fjern produkter"
+        <Button Content="Tilbage til hoved menu"
                 Margin="606,416,534,215"
                 BorderThickness="0"
                 Background="LightBlue"
