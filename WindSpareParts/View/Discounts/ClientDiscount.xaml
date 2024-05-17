@@ -23,13 +23,13 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <ListBox x:Name="listboksen"
-                     ItemsSource="{Binding PersonsVM}"
-                     SelectedItem="{Binding SelectedPerson}"
+                     ItemsSource="{Binding Client}"
+                     SelectedItem="{Binding SelectedClient}"
                      Grid.Row="0">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding FullName}" />
+                            <TextBlock Text="{Binding Client}" />
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
@@ -73,19 +73,19 @@
                        Foreground="#6AB93A"
                        FontFamily="Times New Roman"
                        Margin="166,54,0,0" />
-            <TextBox Text="{Binding SelectedPerson.FirstName}"
+            <TextBox Text="{Binding SelectedPerson.Client}"
                      Height="20"
                      VerticalAlignment="Top"
                      Margin="170,334,171,0" />
-            <TextBox Text="{Binding SelectedPerson.LastName}"
+            <TextBox Text="{Binding SelectedPerson.ContactPerson}"
                      Height="20"
                      Margin="170,380,171,0"
                      VerticalAlignment="Top" />
-            <TextBox Text="{Binding SelectedPerson.Age}"
+            <TextBox Text="{Binding SelectedPerson.ProductRequest}"
                      Height="20"
                      Margin="170,430,171,0"
                      VerticalAlignment="Top" />
-            <TextBox Text="{Binding SelectedPerson.Phone}"
+            <TextBox Text="{Binding SelectedPerson.PhoneNumber}"
                      Height="20"
                      Margin="170,476,171,0"
                      VerticalAlignment="Top" />
@@ -113,7 +113,7 @@
                    VerticalAlignment="Top" />
 
             <Button Content="Tilbage til hoved menu"
-                    Margin="714,587,171,27"
+                    Margin="714,521,171,93"
                     BorderThickness="0"
                     Background="LightBlue"
                     BorderBrush="Transparent"

@@ -90,7 +90,7 @@
                 Click="FjernTilbud_Click"
                 Width="160"
                 Height="70" />
-        <Button Content="Kunde tilbud??"
+        <Button Content="Kunde tilbud"
                 Margin="226,523,914,108"
                 BorderThickness="0"
                 Background="LightBlue"

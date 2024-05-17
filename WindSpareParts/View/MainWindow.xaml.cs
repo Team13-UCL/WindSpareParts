@@ -39,8 +39,8 @@ namespace WindSpareParts
 
         private void FjernTilbud_Click(object sender, RoutedEventArgs e)
         {
-            RemoveDiscount removeDiscount= new RemoveDiscount();
-            removeDiscount.Show();
+            CreateDiscount createDiscount = new CreateDiscount();
+            createDiscount.Show();
             this.Close();
         }
 

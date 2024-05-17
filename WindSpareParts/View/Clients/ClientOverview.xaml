@@ -53,15 +53,15 @@
                    Foreground="#6AB93A"
                    FontFamily="Times New Roman"
                    Margin="83,167,0,0" />
-        <ListBox ItemsSource="{Binding PersonsVM}"
-                 SelectedItem="{Binding SelectedPerson}"
+        <ListBox ItemsSource="{Binding Client}"
+                 SelectedItem="{Binding SelectedClient}"
                  Background="#8899AD"
                  Grid.Row="0"
                  Margin="38,241,976,74">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding FullName}" />
+                        <TextBlock Text="{Binding Client}" />
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>

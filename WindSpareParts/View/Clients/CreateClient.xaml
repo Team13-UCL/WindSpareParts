@@ -43,7 +43,7 @@
                    Margin="333,56,0,0" />
 
         <Button Content="Tilbage til hoved menu"
-                Margin="719,563,421,68"
+                Margin="719,547,421,84"
                 BorderThickness="0"
                 Background="LightBlue"
                 BorderBrush="Transparent"
@@ -52,7 +52,7 @@
                 Width="160"
                 Height="70" />
         <Button Content="Opret kunde"
-                Margin="414,563,726,68"
+                Margin="414,547,726,84"
                 BorderThickness="0"
                 Background="#71D984"
                 BorderBrush="Transparent"
@@ -61,21 +61,21 @@
                 Height="70" />
 
         <Grid Grid.Column="2">
-            <TextBox Text="{Binding SelectedPerson.FirstName}"
+            <TextBox Text="{Binding SelectedPerson.Client}"
                      Height="20"
                      VerticalAlignment="Top"
-                     Margin="170,62,171,0" />
-            <TextBox Text="{Binding SelectedPerson.LastName}"
+                     Margin="170,334,171,0" />
+            <TextBox Text="{Binding SelectedPerson.ContactPerson}"
                      Height="20"
-                     Margin="170,109,171,0"
+                     Margin="170,380,171,0"
                      VerticalAlignment="Top" />
-            <TextBox Text="{Binding SelectedPerson.Age}"
+            <TextBox Text="{Binding SelectedPerson.ProductRequest}"
                      Height="20"
-                     Margin="170,158,171,0"
+                     Margin="170,430,171,0"
                      VerticalAlignment="Top" />
-            <TextBox Text="{Binding SelectedPerson.Phone}"
+            <TextBox Text="{Binding SelectedPerson.PhoneNumber}"
                      Height="20"
-                     Margin="170,204,171,0"
+                     Margin="170,476,171,0"
                      VerticalAlignment="Top" />
             <Label Content="FirstName:"
                    HorizontalAlignment="Left"
