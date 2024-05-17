@@ -12,43 +12,115 @@
         Background="Transparent">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"
-                              MinWidth="1300" />
-            <ColumnDefinition Width="0*" />
+            <ColumnDefinition Width="250"
+                              MinWidth="200" />
+            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"
-                           MinHeight="684.04" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="0*" />
-        </Grid.RowDefinitions>
-
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <ListBox x:Name="listboksen"
+                     ItemsSource="{Binding PersonsVM}"
+                     SelectedItem="{Binding SelectedPerson}"
+                     Grid.Row="0">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding FullName}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <StackPanel Orientation="Horizontal"
+                        Grid.Row="1">
+                <Button Content="Tilføj Tilbud"
+                        Width="119"
+                        Background="#71D984" />
+                <Button x:Name="btnDeletePerson"
+                        Content="Slet Tilbud"
+                        Width="133"
+                        Background="#EF7575" />
+            </StackPanel>
+        </Grid>
         <Border Background="#282D33"
                 BorderBrush="#3A4149"
                 BorderThickness="6"
-                CornerRadius="8,8,0,8" />
+                CornerRadius="8,8,0,8"
+                Margin="-19,0,0,62" />
 
-        <TextBlock x:Name="MainPage"
-                   HorizontalAlignment="Left"
-                   TextWrapping="Wrap"
-                   Text="Wind Spare Parts"
-                   VerticalAlignment="Top"
-                   Width="707"
-                   Height="120"
-                   Background="#282D33"
-                   FontSize="100"
+        <GridSplitter Width="5"
+                      Grid.Column="1"
+                      HorizontalAlignment="Stretch" />
+        <Grid Grid.Column="2">
+            <Border Background="#282D33"
+                    BorderBrush="#3A4149"
+                    BorderThickness="6"
+                    CornerRadius="8,8,0,8"
+                    Margin="-5,0,1,0" />
+            <TextBlock x:Name="MainPage"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="Wind Spare Parts"
+                       VerticalAlignment="Top"
+                       Width="707"
+                       Height="120"
+                       Background="#282D33"
+                       FontSize="100"
+                       Foreground="#6AB93A"
+                       FontFamily="Times New Roman"
+                       Margin="166,54,0,0" />
+            <TextBox Text="{Binding SelectedPerson.FirstName}"
+                     Height="20"
+                     VerticalAlignment="Top"
+                     Margin="170,334,171,0" />
+            <TextBox Text="{Binding SelectedPerson.LastName}"
+                     Height="20"
+                     Margin="170,380,171,0"
+                     VerticalAlignment="Top" />
+            <TextBox Text="{Binding SelectedPerson.Age}"
+                     Height="20"
+                     Margin="170,430,171,0"
+                     VerticalAlignment="Top" />
+            <TextBox Text="{Binding SelectedPerson.Phone}"
+                     Height="20"
+                     Margin="170,476,171,0"
+                     VerticalAlignment="Top" />
+            <Label Content="Produkt navn:"
                    Foreground="#6AB93A"
-                   FontFamily="Times New Roman"
-                   Margin="333,56,0,0" />
+                   HorizontalAlignment="Left"
+                   Margin="64,331,0,0"
+                   VerticalAlignment="Top" />
+            <Label Content="Produkt Nummer:"
+                   Foreground="#6AB93A"
+                   HorizontalAlignment="Left"
+                   Margin="58,377,0,0"
+                   VerticalAlignment="Top"
+                   Width="96" />
+            <Label Content="Tilbud%:"
+                   Foreground="#6AB93A"
+                   HorizontalAlignment="Left"
+                   Margin="78,427,0,0"
+                   VerticalAlignment="Top"
+                   RenderTransformOrigin="0.752,0.579" />
+            <Label Content="Produkt pris:"
+                   Foreground="#6AB93A"
+                   HorizontalAlignment="Left"
+                   Margin="67,473,0,0"
+                   VerticalAlignment="Top" />
 
-        <Button Content="Tilbage til hoved menu"
-                Margin="606,416,534,215"
-                BorderThickness="0"
-                Background="LightBlue"
-                BorderBrush="Transparent"
-                RenderTransformOrigin="0.5,0.67"
-                Click="BackToMain_Click"
-                Width="160"
-                Height="70" />
+            <Button Content="Tilbage til hoved menu"
+                    Margin="714,587,171,27"
+                    BorderThickness="0"
+                    Background="LightBlue"
+                    BorderBrush="Transparent"
+                    RenderTransformOrigin="0.5,0.67"
+                    Click="BackToMain_Click"
+                    Width="160"
+                    Height="70" />
+
+        </Grid>
     </Grid>
 </Window>

@@ -28,5 +28,15 @@ namespace WindSpareParts.View.Clients
         {
             Get.BackToMain(this);
         }
+
+        private void btnNewPerson__Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnDeletePerson_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
