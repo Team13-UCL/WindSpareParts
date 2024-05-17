@@ -11,7 +11,7 @@ namespace WindSpareParts.Model
 {
     public class ProductRepository
     {
-        List<List<string>> products = new List<List<string>>(); // Opretter en liste til at gemme dataene fra CSV-filen
+        public List<List<string>> products = new List<List<string>>(); // Opretter en liste til at gemme dataene fra CSV-filen
         
         public void CreateProduct(Product product)
         {

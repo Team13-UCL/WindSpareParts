@@ -61,8 +61,8 @@ namespace WindSpareParts
 
         private void FjernProdukter_Click(object sender, RoutedEventArgs e)
         {
-            RemoveProducts removeProducts = new RemoveProducts();
-            removeProducts.Show();
+            ViewProducts viewProducts = new ViewProducts();
+            viewProducts.Show();
             this.Close();
         }
 

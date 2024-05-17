@@ -32,7 +32,7 @@ namespace WindSpareParts
         private void search_Click(object sender, RoutedEventArgs e)
         {
 
-            this.CreateProduct.IsEnabled = false;
+            this.CreateProduct.IsEnabled = false; 
             productRepository.ReadFromFile();
             productRepository.SearchProduct(Searchbox.Text); // søgning efter produkt
             List<string> searchResults = productRepository.SearchProduct(Searchbox.Text);
