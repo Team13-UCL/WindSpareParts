@@ -35,7 +35,7 @@ namespace WindSpareParts.View.Products
             
                 productRepository.ReadFromFile();
                 ProductListBox.Items.Clear(); 
-                foreach (List<string> line in productRepository.products) // går igenne hver linje i dataen
+                foreach (List<string> line in productRepository.products) // går igennem hver linje i dataen
                 {
                     var itemText = string.Join(", ", line); // joiner linjerne sammen
                     ProductListBox.Items.Add(new ListBoxItem { Content = itemText }); // tilføjer linjerne til listboxen

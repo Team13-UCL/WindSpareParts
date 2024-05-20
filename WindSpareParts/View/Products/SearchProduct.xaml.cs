@@ -46,7 +46,7 @@ namespace WindSpareParts
 
         private void CreateProduct_Click(object sender, RoutedEventArgs e)
         {
-            productRepository.SaveToFile(Searchbox.Text);
+            productRepository.CreateProduct(Searchbox.Text);
             Searchbox.Text = "Produktet er gemt \nTilføj et produkt eller søg efter nyt produkt"; // clear boxen
             CreateProduct.IsEnabled = false;
 

@@ -12,12 +12,7 @@ namespace WindSpareParts.Model
     public class ProductRepository
     {
         public List<List<string>> products = new List<List<string>>(); // Opretter en liste til at gemme dataene fra CSV-filen
-        
-        public void CreateProduct(Product product)
-        {
-            //products.Add(product); //det nye produkt tilføjes til listen products
-        }
-
+                
         public void DeleteProduct(Product product)
         {
             //products.Remove(product); //sletter et produkt fra listen products
@@ -65,7 +60,7 @@ namespace WindSpareParts.Model
             return searchResults;
         }
 
-        public void SaveToFile(string searchText)
+        public void CreateProduct(string searchText)
         {
 
             // super smart, den går 3 mappetrin op og ind i Model-mappen og finder csv-filen

@@ -46,7 +46,7 @@ namespace WindSpareParts
 
         private void KundeTilbud_Click(object sender, RoutedEventArgs e)
         {
-            ClientDiscont clientDiscount = new ClientDiscont();
+            ClientDiscount clientDiscount = new ClientDiscount();
             clientDiscount.Show();
             this.Close();
         }
