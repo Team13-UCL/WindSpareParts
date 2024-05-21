@@ -34,12 +34,12 @@
         <ListBox x:Name="ProductListBox"
                  Margin="4,189,0,0" />
         <Button Content="Tilbage til hoved menu"
-                Margin="1092,63,48,568"
+                Margin="1137,72,0,0"
                 BorderThickness="0"
                 Background="LightBlue"
                 BorderBrush="Transparent"
                 RenderTransformOrigin="0.5,0.67"
-                Click="BackToMain_Click" />
+                Click="BackToMain_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Height="78" Width="169" />
         <TextBlock x:Name="MainPage"
                    HorizontalAlignment="Left"
                    TextWrapping="Wrap"
@@ -53,11 +53,11 @@
                    FontFamily="Times New Roman"
                    Margin="333,56,0,0" />
         <Button Content="Slet Produkt"
-                Margin="41,63,1099,568"
+                Margin="41,63,0,0"
                 BorderThickness="0"
                 Background="LightBlue"
                 BorderBrush="Transparent"
-                RenderTransformOrigin="0.5,0.67" />
+                RenderTransformOrigin="0.5,0.67" HorizontalAlignment="Left" VerticalAlignment="Top" Height="80" Width="141" />
 
     </Grid>
 </Window>
