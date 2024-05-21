@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
 
-namespace WindSpareParts.View
+namespace WindSpareParts.ViewModel
 {
     public static class Get
     {
-        public static void BackToMain(Window currentWindow) 
+        public static void BackToMain(Window currentWindow)
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
